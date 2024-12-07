@@ -782,6 +782,7 @@ GameObject:
   - component: {fileID: 603647400}
   - component: {fileID: 603647399}
   - component: {fileID: 603647402}
+  - component: {fileID: 603647403}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -853,6 +854,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SettingsPanel: {fileID: 1813016509}
   MenuPanel: {fileID: 1150161007}
+--- !u!114 &603647403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603647398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b23c2d8f1b4ac45b851491dd653abc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: d3655e31ae21d474bbe03e085fb8ab33, type: 2}
+  Penis: {fileID: 1274644868091700, guid: b388274248516a941906b543fd0b2708, type: 3}
+  Shkoda: {fileID: 5676650373326681866, guid: 04a37eeb49478874d9ea5f038228a093, type: 3}
 --- !u!1 &606550787
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,7 +952,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 606550790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 603647403}
+        m_TargetAssemblyTypeName: SettingsButtons, Assembly-CSharp
+        m_MethodName: PenisMobil
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &606550790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,7 +1902,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1898417426}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 603647403}
+        m_TargetAssemblyTypeName: SettingsButtons, Assembly-CSharp
+        m_MethodName: ShkodaMobil
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1898417426
 MonoBehaviour:
   m_ObjectHideFlags: 0
