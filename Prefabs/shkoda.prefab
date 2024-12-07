@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1582020507000473752}
   - component: {fileID: 5410087640279351713}
   m_Layer: 0
-  m_Name: shkoda
+  m_Name: Shkoda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
