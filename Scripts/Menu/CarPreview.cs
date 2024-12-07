@@ -33,7 +33,9 @@ public class CarPreview : MonoBehaviour
     }
     void FixedUpdate() {
         previewInstance.transform.Rotate(transform.rotation.x, transform.rotation.y, transform.rotation.z+1);
-        if (!settings.MainPrefab == prefab) {
+
+        if (settings.MainPrefab != prefab) {
+            Destroy(previewInstance);
             Spawn();
         }
     }
