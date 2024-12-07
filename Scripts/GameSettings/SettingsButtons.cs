@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class SettingsButtons : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Settings settings;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public GameObject Penis;
+    public GameObject Shkoda;
+    public void PenisMobil() {
+        settings.MainPrefab = Penis;
+    }
+    public void ShkodaMobil() {
+        settings.MainPrefab = Shkoda;
     }
 }
