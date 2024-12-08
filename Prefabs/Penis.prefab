@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7777839253536291711}
   - component: {fileID: 5121963553393921450}
-  - component: {fileID: 1430991556163326189}
+  - component: {fileID: 7157148033956322965}
   m_Layer: 0
   m_Name: Penis
   m_TagString: Untagged
@@ -136,7 +136,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1430991556163326189
+--- !u!65 &7157148033956322965
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,8 +147,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0020215116, y: 0.0013512399, z: 0.004164362}
-  m_Center: {x: 0.0001297, y: 0.000003195964, z: -0.00057816476}
+  m_Size: {x: 0.002078398, y: 0.0012457354, z: 0.0044523925}
+  m_Center: {x: 0.00016186938, y: -0.000016299915, z: -0.00036576597}
 --- !u!1 &7710007862693517166
 GameObject:
   m_ObjectHideFlags: 0
