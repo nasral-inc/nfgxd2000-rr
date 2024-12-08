@@ -7,15 +7,18 @@ public class CarPreview : MonoBehaviour
 {
     public Settings settings;
     private GameObject prefab;
-    private GameObject previewInstance;
+    //private GameObject previewInstance;
+    private GameObject instance;
 
     void Spawn() {
         prefab = settings.MainPrefab;
-        previewInstance = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
-        previewInstance.transform.SetParent(transform);
-        previewInstance.transform.localPosition = Vector3.zero;
-        Rigidbody rigidBody = previewInstance.GetComponent<Rigidbody>();
-        BoxCollider boxCollider = previewInstance.GetComponent<BoxCollider>();
+        // previewInstance = PrefabUtility.InstantiatePrefab(prefab) as GameObject;
+        // previewInstance.transform.SetParent(transform);
+        // previewInstance.transform.localPosition = Vector3.zero;
+        instance = Instantiate(prefab, transform);
+        instance.transform.localPosition = Vector3.zero;
+        Rigidbody rigidBody = instance.GetComponent<Rigidbody>();
+        BoxCollider boxCollider = instance.GetComponent<BoxCollider>();
         Destroy(rigidBody);
         Destroy(boxCollider);
     }
@@ -32,10 +35,10 @@ public class CarPreview : MonoBehaviour
         // Destroy(boxCollider);
     }
     void FixedUpdate() {
-        previewInstance.transform.Rotate(transform.rotation.x, transform.rotation.y, transform.rotation.z+1);
+        instance.transform.Rotate(transform.rotation.x, transform.rotation.y, transform.rotation.z+1);
 
         if (settings.MainPrefab != prefab) {
-            Destroy(previewInstance);
+            Destroy(instance);
             Spawn();
         }
     }
