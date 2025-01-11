@@ -10,6 +10,7 @@ public class SettingsButtons : MonoBehaviour
     public GameObject Shkoda;
     public GameObject Arbuz;
     public GameObject Printer;
+    public GameObject Stiv;
     public void PenisMobil() {
         settings.MainPrefab = Penis;
     }
@@ -21,5 +22,8 @@ public class SettingsButtons : MonoBehaviour
     }
     public void PrinterMobil() {
         settings.MainPrefab = Printer;
+    }
+    public void StivMobil() {
+        settings.MainPrefab = Stiv;
     }
 }
