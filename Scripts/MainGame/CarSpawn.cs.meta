@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 5ea4fd43c7d48a14dae2eb390f966650
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - settings: {fileID: 11400000, guid: d3655e31ae21d474bbe03e085fb8ab33, type: 2}
+  - arbuz: {fileID: 1600856095855586982, guid: 796e24f1bbdcb824885f8fdaf8532686, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
